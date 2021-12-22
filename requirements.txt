@@ -9,3 +9,4 @@ whois==0.9.8
 xgboost==1.5.1
 urllib3==1.26.7
 plotly==5.4.0
+scikit-learn==1.0.1

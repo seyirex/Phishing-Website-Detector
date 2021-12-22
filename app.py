@@ -21,11 +21,9 @@ menu_items = {
 st.set_page_config(page_title="Phishing Website Detector", page_icon="./images/favicon.png", layout='centered',menu_items=menu_items)
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
-@st.cache(allow_output_mutation=True)# load model from file
-def load_model():
-	model = pickle.load(open("./Model/XGBoostClassifier.pickle.dat", "rb"))
-	return model
-loaded_model = load_model()# intalizing the model function
+
+loaded_model= pickle.load(open("./Model/XGBoostClassifier.pickle.dat", "rb"))
+
 
 # Frontend
 

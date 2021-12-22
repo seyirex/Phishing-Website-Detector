@@ -1,0 +1,8 @@
+requests==2.25.1
+tldextract==3.1.0
+python_whois==0.7.3
+streamlit==0.79.0
+pandas==1.2.3
+beautifulsoup4==4.9.3
+python_dateutil==2.8.1
+whois==0.9.8

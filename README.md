@@ -1,4 +1,5 @@
 # PROJECT DOCUMENTATION
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/seyirex/phishing-website-detector/main/app.py) Webapp link
 ## Introduction
 Phishing is a form of cybercrime in which a target is contacted via email, telephone, or text message by an attacker disguising as a reputable entity or person. The attacker then lures individuals to counterfeit websites to trick recipients into providing sensitive data. According to the FBI, phishing incidents nearly doubled in frequency, from 114,702 incidents in 2019, to 241,324 incidents in 2020.
 As the internet becomes a major mode for economic transactions and communications, online trust and cybercrimes have increasingly become an important area of study. The purpose of this project is to help individuals identify phishing URLs in order to provide safer practices online using machine learning techniques. The deployment of the Streamlit application allows users to verify the authenticity of URLs themselves.

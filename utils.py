@@ -8,8 +8,14 @@ import urllib
 import urllib.request
 from datetime import datetime
 import whois
-
+import streamlit as st
+import pickle
 # Functions to determine the features of the URL
+
+@st.cache(allow_output_mutation=True)
+def load_model():
+  model=pickle.load(open("./Model/XGBoostClassifier.pickle.dat", "rb"))
+  return model
 
 def checkIP(url):
     try:
@@ -204,6 +210,5 @@ def featureExtraction(url):
     "Mouse_Over" : checkMouseOver(response),
     "Right_Click" : checkRightClick(response),
     "Web_Forwards" : checkForwarding(response),
-}
-           
+}       
     return featuresDict
